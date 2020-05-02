@@ -40,8 +40,12 @@ function greeting(first, last) {
 // ==== Closures ==== 
 
 // Explain in your own words why nestedfunction can access the variable internal.
-// Just because the function is nested doesnt mean it cant look outside itself to find the internal variable. Const is block scoped and the nested function is within const internals block.
+
 // Explanation: 
+
+///////ANSWER//////
+//Just because the function is nested doesnt mean it can't look outside itself to find the internal variable. Const is block scoped and the nested function is within the block const internal was defined.
+///////ANSWER//////
 
 
 const external = "I'm outside the function";
