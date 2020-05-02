@@ -78,10 +78,7 @@ const graduates = [
 
 Once you have the new array created, log the result. */
 function findUniversities(arr) {
-  const universities = []
-  arr.forEach(student => {
-    universities.push(student.university)
-  });
+  const universities = arr.map(student => student.university);
   return universities;
 }
 console.log(findUniversities(graduates));
@@ -93,10 +90,7 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 function contact(arr) {
-  const contactInfo = [];
-  arr.forEach(student => {
-    contactInfo.push(`${student.first_name} ${student.email}`)
-  });
+  const contactInfo = arr.map(student => `${student.first_name} ${student.email}`);
   return contactInfo;
 }
 
@@ -131,7 +125,7 @@ const zooAnimals = [
 /* Request 1: .forEach()
 
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
-Name: Jackal, asiatic, Scientific: Canis aureus.
+
 */
 
 function findNames(arr) {
